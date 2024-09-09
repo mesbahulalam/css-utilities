@@ -1,0 +1,119 @@
+// flexbox based grid
+.row {
+  display: flex;
+  &.rev {flex-direction: row-reverse}
+  &.col {flex-direction: column}
+  &.col.rev {flex-direction: column-reverse}
+  &.wrap {flex-wrap: wrap}
+  &.wrap-reverse {flex-wrap: wrap-reverse}
+  &.h-center {justify-content: center}
+  &.v-center {align-items: center}
+  &.v-top {align-items: top}
+  &.v-bottom {align-items: bottom}
+  
+  & > .col-* {
+    flex: 1 0 auto;
+    &.first {order: -1}
+    &.last {order:  1}
+    &.left {align-self: flex-start}  /* left */
+    &.right {align-self: flex-end}  /* right */
+    &.nexp {flex: 0 1 auto}
+  }
+}
+
+.clearfix:before, .clearfix:after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+// traditional grid system.
+.r {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.r > .col-* {float: left}
+
+// the 12 columns
+@for $i from 1 through 12 {
+  .row > .col-#{$i} {
+    flex-basis: calc(100% / 12) * $i;
+    width: calc(100% / 12) * $i;
+  }
+  .r > .col-#{$i} {width: calc(100% / 12) * $i}
+}
+
+
+// one column for anything under 601px
+@media (max-width: 600px){
+  .row > .col-*:not(.ignore-screen){
+    flex-basis: 100%;
+    width: 100%;
+  }
+}
+
+// some shenanigans
+.show {display: initial}
+.hide {display: none}
+@media (max-width: 600px){
+  .show-on-small {display: initial}
+  .hide-on-small {display: none}
+}
+@media (min-width: 601px){
+  .show-on-med-and-up {display: initial}
+  .hide-on-med-and-up {display: none}
+}
+@media (min-width: 993px){
+  .show-on-large {display: initial}
+  .hide-on-large {display: none}
+}
+
+
+// margin
+$sizes: 0, 1, 2, 4, 8;
+
+.m-auto {margin: auto}
+.mt-auto, .my-auto {margin-top: auto}
+.mb-auto, .my-auto {margin-bottom: auto}
+.ml-auto, .mx-auto {margin-left: auto}
+.mr-auto, .mx-auto {margin-right: auto}
+@each $size in $sizes {
+  .m-#{$size} {margin: $space * $size}
+  .mt-#{$size}, .my-#{$size} {
+    margin-top: $space * $size;
+  }
+  .mb-#{$size}, .my-#{$size} {
+    margin-bottom: $space * $size;
+  }
+  .ml-#{$size}, .mx-#{$size} {
+    margin-left: $space * $size;
+  }
+  .mr-#{$size}, .mx-#{$size} {
+    margin-right: $space * $size;
+  }
+}
+
+
+// padding
+.p-auto {padding: auto}
+.pt-auto, .py-auto {padding-top: auto}
+.pb-auto, .py-auto {padding-bottom: auto}
+.pl-auto, .px-auto {padding-left: auto}
+.pr-auto, .px-auto {padding-right: auto}
+@each $size in $sizes {
+  .p-#{$size} {padding: $space * $size}
+  .pt-#{$size}, .py-#{$size} {
+    padding-top: $space * $size;
+  }
+  .pb-#{$size}, .py-#{$size} {
+    padding-bottom: $space * $size;
+  }
+  .pl-#{$size}, .px-#{$size} {
+    padding-left: $space * $size;
+  }
+  .pr-#{$size}, .px-#{$size} {
+    padding-right: $space * $size;
+  }
+}
