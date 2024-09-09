@@ -1,0 +1,48 @@
+/* Colors */
+.navy, .hover-navy:hover {background-color:#001F3F !important}
+.blue, .hover-blue:hover {background-color:#0074D9 !important}
+.light-blue, .hover-light-blue:hover {background-color:#03A9F4 !important}
+.dodger-blue, .hover-dodger-blue:hover {background-color:#1E90FF !important}
+.aqua, .hover-aqua:hover {background-color:#7FDBFF !important}
+.teal, .hover-teal:hover {background-color:#39CCCC !important}
+.green, .hover-green:hover {background-color:#2ECC40 !important}
+.yellow, .hover-yellow:hover {background-color:#FFDC00 !important}
+.orange, .hover-orange:hover {background-color:#FF851B !important}
+.red, .hover-red:hover {background-color:#FF4136 !important}
+.purple, .hover-purple:hover {background-color:#B10DC9 !important}
+.white, .hover-white:hover {background-color:#FFFFFF !important}
+.gray, .hover-gray:hover {background-color:#AAAAAA !important}
+.black, .hover-black:hover {background-color:#111111 !important}
+.transparent, .hover-transparent:hover {background-color:transparent !important}
+
+.navy-text, .hover-navy-text:hover {color:#001F3F !important}
+.blue-text, .hover-blue-text:hover {color:#0074D9 !important}
+.light-blue-text, .hover-light-blue-text:hover {color:#03A9F4 !important}
+.dodger-blue-text, .hover-dodger-blue-text:hover {color:#1E90FF !important}
+.aqua-text, .hover-aqua-text:hover {color:#7FDBFF !important}
+.teal-text, .hover-teal-text:hover {color:#39CCCC !important}
+.green-text, .hover-green-text:hover {color:#2ECC40 !important}
+.yellow-text, .hover-yellow-text:hover {color:#FFDC00 !important}
+.orange-text, .hover-orange-text:hover {color:#FF851B !important}
+.red-text, .hover-red-text:hover {color:#FF4136 !important}
+.purple-text, .hover-purple-text:hover {color:#B10DC9 !important}
+.white-text, .hover-white-text:hover {color:#FFFFFF !important}
+.gray-text, .hover-gray-text:hover {color:#AAAAAA !important}
+.black-text, .hover-black-text:hover {color:#111111 !important}
+.transparent-text, .hover-transparent-text:hover {color:transparent !important}
+
+.navy-border, .hover-navy-border:hover {border:solid 1px #001F3F !important}
+.blue-border, .hover-blue-border:hover {border:solid 1px #0074D9 !important}
+.light-blue-border, .hover-light-blue-border:hover {border:solid 1px #03A9F4 !important}
+.dodger-blue-border, .hover-dodger-blue-border:hover {border:solid 1px #1E90FF !important}
+.aqua-border, .hover-aqua-border:hover {border:solid 1px #7FDBFF !important}
+.teal-border, .hover-teal-border:hover {border:solid 1px #39CCCC !important}
+.green-border, .hover-green-border:hover {border:solid 1px #2ECC40 !important}
+.yellow-border, .hover-yellow-border:hover {border:solid 1px #FFDC00 !important}
+.orange-border, .hover-orange-border:hover {border:solid 1px #FF851B !important}
+.red-border, .hover-red-border:hover {border:solid 1px #FF4136 !important}
+.purple-border, .hover-purple-border:hover {border:solid 1px #B10DC9 !important}
+.white-border, .hover-white-border:hover {border:solid 1px #FFFFFF !important}
+.gray-border, .hover-gray-border:hover {border:solid 1px #AAAAAA !important}
+.black-border, .hover-black-border:hover {border:solid 1px #111111 !important}
+.transparent-border, .hover-transparent-border:hover {border:solid 1px transparent !important}
